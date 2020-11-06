@@ -5,22 +5,22 @@ $(function () {
 });
 
 const startScanner = () => {
-  Quagga.init({
-      inputStream: {
-          name: "Live",
-          type: "LiveStream",
-          target: document.querySelector('#photo-area'),
-          constraints: {
-              decodeBarCodeRate: 3,
-              successTimeout: 500,
-              codeRepetition: true,
-              tryVertical: true,
-              frameRate: 15,
-              width: 352,
-              height: 288,
-              facingMode: "environment"
-          },
-      },
+    Quagga.init({
+        inputStream: {
+            name: "Live",
+            type: "LiveStream",
+            target: document.querySelector('#photo-area'),
+            constraints: {
+                decodeBarCodeRate: 3,
+                successTimeout: 500,
+                codeRepetition: true,
+                tryVertical: true,
+                frameRate: 15,
+                width: 640,
+                height: 480,
+                facingMode: "environment"
+            },
+        },
       decoder: {
           readers: [
               "i2of5_reader"
