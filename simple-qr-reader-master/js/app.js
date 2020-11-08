@@ -1,3 +1,5 @@
+const quaggaMin = require("./quagga.min")
+
 if (!navigator.mediaDevices) {
     document.querySelector('#js-unsupported').classList.add('is-show')
 }
@@ -14,7 +16,7 @@ const checkImage = () => {
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
 
     // jsQRに渡す
-    const code = jsQR(imageData.data, canvas.width, canvas.height)
+    const code = quaggaMin(imageData.data, canvas.width, canvas.height)
 
     // QRコードの読み取りに成功したらモーダル開く
     // 失敗したら再度実行
