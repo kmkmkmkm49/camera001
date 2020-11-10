@@ -21,7 +21,7 @@
 
 </div>
 <input type="button" value="clear" id="clear">
-<a id="download" href="C:\Users\k_muroga\Desktop\camera0001" download="canvas.jpg">ダウンロード</a>
+<a id="download" href="#" download="canvas.jpg">ダウンロード</a>
 <div id="result"><img src=""></div>
 
 <audio id="se" preload="auto">
@@ -40,8 +40,8 @@ window.onload = () => {
     video: {
       width: 300,
       height: 200,
-      facingMode: none   // フロントカメラを利用する
-      // facingMode: { exact: "environment" }  // リアカメラを利用する場合
+      //facingMode: "user"   // フロントカメラを利用する
+       facingMode: { exact: "environment" }  // リアカメラを利用する場合
     }
   };
 
