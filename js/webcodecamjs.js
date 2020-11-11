@@ -54,8 +54,8 @@ var WebCodeCamJS = function(element) {
             codeRepetition: true,
             tryVertical: true,
             frameRate: 15,
-            width: 640,
-            height: 480,
+            width: 320,
+            height: 240,
             constraints: {
                 video: {
                     mandatory: {
@@ -296,7 +296,7 @@ var WebCodeCamJS = function(element) {
             scanWidth: scanSize.width,
             scanHeight: scanSize.height,
             multiple: false,
-            decodeFormats: ["Code128", "Code93", "Code39", "EAN-13", "2Of5", "Inter2Of5", "Codabar"],
+            decodeFormats: ["EAN-13"],
             rotation: flipMode[0]
         });
     }
