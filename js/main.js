@@ -51,7 +51,7 @@
                 }, 300);
             });
             scannedImg.src = res.imgData;
-            scannedQR[txt] = res.format + ": " + res.code;
+            scannedQR[txt] = res.code;
         },
         getDevicesError: function(error) {
             var p, message = "Error detected with the following parameters:\n";
@@ -91,9 +91,9 @@
     }, false);
     play.addEventListener("click", function() {
         if (!decoder.isInitialized()) {
-            scannedQR[txt] = "Scanning ...";
+            //scannedQR[txt] = "Scanning ...";
         } else {
-            scannedQR[txt] = "Scanning ...";
+            //scannedQR[txt] = "Scanning ...";
             decoder.play();
         }
     }, false);
@@ -105,12 +105,12 @@
         scannedImg.setAttribute("src", src);
     }, false);
     pause.addEventListener("click", function(event) {
-        scannedQR[txt] = "Paused";
+        //scannedQR[txt] = "Paused";
         decoder.pause();
     }, false);
     stop.addEventListener("click", function(event) {
         grabImg.classList.add("disabled");
-        scannedQR[txt] = "Stopped";
+        //scannedQR[txt] = "Stopped";
         decoder.stop();
     }, false);
     Page.changeZoom = function(a) {

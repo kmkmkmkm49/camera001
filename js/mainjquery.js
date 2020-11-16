@@ -40,7 +40,7 @@
                 });
             });
             scannedImg.attr("src", res.imgData);
-            scannedQR.text(res.format + ": " + res.code);
+            scannedQR.text(res.code);
         },
         getDevicesError: function(error) {
             var p, message = "Error detected with the following parameters:\n";
@@ -80,7 +80,7 @@
         Page.decodeLocalImage();
     });
     play.on("click", function() {
-        scannedQR.text("Scanning ...");
+        //scannedQR.text("Scanning ...");
         grabImg.removeClass("disabled");
         decoder.play();
     });
@@ -88,12 +88,12 @@
         scannedImg.attr("src", decoder.getLastImageSrc());
     });
     pause.on("click", function(event) {
-        scannedQR.text("Paused");
+        //scannedQR.text("Paused");
         decoder.pause();
     });
     stop.on("click", function(event) {
         grabImg.addClass("disabled");
-        scannedQR.text("Stopped");
+        //scannedQR.text("Stopped");
         decoder.stop();
     });
     Page.changeZoom = function(a) {
