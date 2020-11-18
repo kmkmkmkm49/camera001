@@ -41,12 +41,12 @@
             tryVertical: true,
             frameRate: 15,
             width: 320,
-            height: 240,
+            height: auto,
             constraints: {
                 video: {
                     mandatory: {
                         maxWidth: 1280,
-                        maxHeight: 720
+                        maxHeight: auto
                     },
                     optional: [{
                         sourceId: true
