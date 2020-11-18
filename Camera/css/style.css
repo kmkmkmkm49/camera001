@@ -7,18 +7,18 @@ body {
 }
 
 @media screen and (min-width: 769px){
-
     #webcodecam-canvas, #scanned-img {
         background-color: #2d2d2d;
         width:320px;
         height: 240px;
     }
 }
+
 @media screen and (max-width: 768px){
     #webcodecam-canvas, #scanned-img {
         background-color: #2d2d2d;
-        width:240px;
-        height: 320px;
+        width:320px;
+        height: 240px;
     }
 }
 
