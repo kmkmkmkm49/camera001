@@ -18,8 +18,8 @@ body {
 @media screen and (max-width: 768px){
     #webcodecam-canvas, #scanned-img {
         background-color: #2d2d2d;
-        max-width: 100%;
-        height: auto;
+        width: 240px;
+        height: 180px;
     }
 }
 
