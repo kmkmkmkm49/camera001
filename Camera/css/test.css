@@ -1,0 +1,21 @@
+#photo-area.viewport {
+  height: 240px;
+   width:320px;
+}
+@media screen and (min-width: 769px){
+  #photo-area.viewport canvas, video {
+    float: left;
+    width:320px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 768px){
+  #photo-area.viewport canvas, video {
+    float: left;
+    width:240px;
+    height: 320px;
+  }
+  }
+#photo-area.viewport canvas.drawingBuffer, video.drawingBuffer {
+  margin-left: -320px;
+}
