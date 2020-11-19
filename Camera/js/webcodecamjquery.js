@@ -40,7 +40,7 @@
             codeRepetition: true,
             tryVertical: true,
             frameRate: 15,
-            width: 320,
+            width: 360,
             height: 240,
             constraints: {
                 video: {

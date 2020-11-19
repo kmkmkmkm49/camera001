@@ -39,8 +39,11 @@
                     $(el).fadeIn(300);
                 });
             });
-            scannedImg.attr("src", res.imgData);
-            scannedQR.text(res.code);
+            if (res.code.indexOf("9784") == 0){
+                scannedImg.attr("src", res.imgData);
+                scannedQR.text(res.code);
+                alert(res.code);
+            }
         },
         getDevicesError: function(error) {
             var p, message = "Error detected with the following parameters:\n";
