@@ -21,7 +21,7 @@ body {
         background-color: #2d2d2d;
         width: 240px;
         height: 240px;
-        object-fit: none;
+        object-fit: contain;
     }
 }
 
