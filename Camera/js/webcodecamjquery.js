@@ -40,12 +40,12 @@
             codeRepetition: true,
             tryVertical: true,
             frameRate: 15,
-            width: 320,
+            width: 240,
             height: 240,
             constraints: {
                 video: {
                     mandatory: {
-                        maxWidth: 1280,
+                        maxWidth: 720,
                         maxHeight: 720
                     },
                     optional: [{
