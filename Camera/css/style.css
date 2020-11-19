@@ -19,7 +19,8 @@ body {
     #webcodecam-canvas, #scanned-img {
         background-color: #2d2d2d;
         width: 240px;
-        height: 180px;
+        height: 120px;
+        object-fit: contain;
     }
 }
 
