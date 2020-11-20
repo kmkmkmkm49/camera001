@@ -39,15 +39,15 @@
                     $(el).fadeIn(300);
                 });
             });
-            /*if (res.code.indexOf("9784") == 0){
+            if (res.code.indexOf("9784") == 0){
+                if (res.code + ".json" == existsSync("/book_data/")){
+                    scannedImg.attr("src", res.imgData);
+                    scannedQR.text(res.code);
+                    alert("読み取りました");
+                }
                 scannedImg.attr("src", res.imgData);
                 scannedQR.text(res.code);
-                alert(res.code);
-            }*/
-            if (res.code + ".json" == existsSync("/book_data/")){
-                scannedImg.attr("src", res.imgData);
-                scannedQR.text(res.code);
-                alert("読み取りました")
+                alert("この本は存在しません");
             }
         },
         getDevicesError: function(error) {
