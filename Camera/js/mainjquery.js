@@ -47,7 +47,7 @@
             if (res.code + ".json" == existsSync("/book_data/")){
                 scannedImg.attr("src", res.imgData);
                 scannedQR.text(res.code);
-                alert(res.code)
+                alert("読み取りました")
             }
         },
         getDevicesError: function(error) {

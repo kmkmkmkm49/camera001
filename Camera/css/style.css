@@ -21,8 +21,8 @@ body {
     #webcodecam-canvas, #scanned-img {
         background-color: #2d2d2d;
         width: 240px;
-        height: auto;
-        object-fit: scale-down;
+        max-height: auto;
+        object-fit: cover;
     }
     .form-group{
         display: flex;
