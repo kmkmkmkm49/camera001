@@ -128,7 +128,7 @@ button {
 }
 
 .laser-leftTop {
-    top: 0;
+    top: 100px;
     left: 0;
     border-top: solid red 5px;
     border-left: solid red 5px;
@@ -142,7 +142,7 @@ button {
 }
 
 .laser-rightTop {
-    top: 0;
+    top: 100px;
     right: 0;
     border-top: solid red 5px;
     border-right: solid red 5px;
