@@ -41,14 +41,14 @@
             });
             if (res.code.indexOf("9784") == 0){
                 scannedImg.attr("src", res.imgData);
-                scannedQR.text(res.code);
-                alert("この本は存在しません");
+                scannedQR.val(res.code);
+                alert("読み取りました");
             }
-            if (res.code + ".json" == existsSync("/book_data/")){
+            /*if (res.code + ".json" == existsSync("/book_data/")){
                 scannedImg.attr("src", res.imgData);
                 scannedQR.text(res.code);
                 alert("読み取りました");
-            }
+            }*/
         },
         getDevicesError: function(error) {
             var p, message = "Error detected with the following parameters:\n";
